@@ -27,7 +27,7 @@ cap = cv2.VideoCapture(0)   # Getting video feed from the webcam
 cap.set(3, width)           # Adjusting size
 cap.set(4, height)
 #increase the confidence to increase precision
-detector = ht.HandDetector(maxHands=1)                  # Detecting one hand at max
+detector = ht.HandDetector(maxHands=2)                  # Detecting one hand at max
 screen_width, screen_height = autopy.screen.size()      # Getting the screen size
 
 devices = AudioUtilities.GetSpeakers()
